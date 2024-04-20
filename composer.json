@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "k-mohsen99\\Vouchers\\": "src"
+            "BeyondCode\\Vouchers\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "k-mohsen99\\Vouchers\\Tests\\": "tests"
+            "BeyondCode\\Vouchers\\Tests\\": "tests"
         }
     },
     "scripts": {
