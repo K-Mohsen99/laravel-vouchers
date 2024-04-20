@@ -14,10 +14,10 @@ class Vouchers
     /** @var \BeyondCode\Vouchers\Models\Voucher  */
     private $voucherModel;
 
-    public function __construct(VoucherGenerator $generator)
+    public function __construct(VoucherGenerator $generator, ?string $model = null)
     {
         $this->generator = $generator;
-        $this->voucherModel = app(config('vouchers.model', Voucher::class));
+        $this->voucherModel = app($model ?? config('vouchers.model', Voucher::class));
     }
 
     /**
